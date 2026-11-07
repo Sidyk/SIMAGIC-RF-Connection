@@ -39,3 +39,6 @@ No Simagic firmware or Kegetys code is redistributed here. A successful PC `HidD
 An experimental SimHub bridge controlled this RF-connected NEO X through the Alpha U base without MagLink. Button flags used the wheel's hardware **FLAG** trigger. RPM used **saved lighting stages selected by telemetry**, following the same broad approach as SimPro 2; it did not stream arbitrary per-frame RPM colors. The bridge plugin is not distributed in this repository and is no longer installed locally.
 
 See the [host-side HID protocol notes](docs/host-protocol.md) for report layout and the [bridge experiment record](docs/bridge-experiments.md) for the complete project history, measurements, limits, and recovery findings.
+
+
+To reproduce the controlled host-side test on the same hardware and firmware, follow the [step-by-step procedure](docs/reproduction.md). This is an implementation guide, not a downloadable bridge or a decoded RF/ACK protocol.
