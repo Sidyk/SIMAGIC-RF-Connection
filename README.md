@@ -32,3 +32,10 @@ See [detailed observations](docs/observations.md) and [reproduction limits and o
 These notes describe our own tests and observations. The nRF24 setup, rim-to-base packet analysis, and ACK-payload hypothesis remain credited to [Kegetys](https://github.com/Kegetys/simagic-arduino-poc). His example code selects `RF24_250KBPS`, which means **250 kilobits/s** at the radio PHY; it does not establish useful LED throughput on our particular base/rim firmware.
 
 No Simagic firmware or Kegetys code is redistributed here. A successful PC `HidD_SetFeature` call proves only that the host submitted a report to the base. Physical observations are called out separately below.
+
+
+## SimHub RF bridge
+
+An experimental SimHub bridge controlled this RF-connected NEO X through the Alpha U base without MagLink. Button flags used the wheel's hardware **FLAG** trigger. RPM used **saved lighting stages selected by telemetry**, following the same broad approach as SimPro 2; it did not stream arbitrary per-frame RPM colors. The bridge plugin is not distributed in this repository and is no longer installed locally.
+
+See the [host-side HID protocol notes](docs/host-protocol.md) for report layout and the [bridge experiment record](docs/bridge-experiments.md) for the complete project history, measurements, limits, and recovery findings.
