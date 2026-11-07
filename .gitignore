@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+wheel-private.json
+readback-private.bin
+private-frames/
+examples/HidReproducer.exe
+examples/HidSharp.dll
